@@ -115,15 +115,25 @@ Thanks you! :)
 
 
 if __name__ == '__main__':
-	path = input("Please enter profile name : ")
+	p_path = input("Please enter profile path : ")
 	dic = {}
 
 	try:
-		with open(path, 'r') as f:
+		with open(p_path, 'r') as f:
 			dic = json.load(fp=f)
 	except:
 		print("Could not open profile...")
 		exit(1)
+
+
+	w_path = input("Please enter workspace path : ")
+
+	try:
+		os.chdir(w_path)
+	except:
+		print("Could not move to working directory.")
+		exit(1)
+
 
 	scanner = Scanner({})
 	scanner.run(dic, True)

@@ -3,13 +3,28 @@
 
 ## インストール
 ダウンロードしたフォルダーに入って以下のコマンドを実行。
+
 ```
-# ShunScannerの中で実行
+# ShunScannerの中で以下のコマンドを1つ1つ実行
 pip3 install print-color
 cp scan.py ~/.local/bin/sscan
-chmod u+x ~/.local/bin/sscan
+chmod u+x ~/.local/bin/sscan 
 ```
-
+### パスの通り方
+#### bash
+```
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+#### zsh
+```
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
+#### fish
+```
+set -U fish_user_paths $HOME/.local/bin $fish_user_paths
+```
 ## 使い方
 
 ```

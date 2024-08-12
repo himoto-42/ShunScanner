@@ -1,0 +1,132 @@
+{
+    "Project": "C Piscine C00",
+    "Author": "himoto",
+    "profiles": [
+        {
+            "name": "Exercise 00: ft_putchar",
+            "scan": {
+                "directory": "ex00",
+                "files": [
+                    "ft_putchar.c"
+                ],
+                "entry": "dm9pZAlmdF9wdXRjaGFyKGNoYXIgYyk7CgppbnQJbWFpbih2b2lkKQp7CglmdF9wdXRjaGFyKCdhJyk7CglmdF9wdXRjaGFyKCdcbicpOwoJZnRfcHV0Y2hhcignJCcpOwoJZnRfcHV0Y2hhcignMScpOwp9",
+                "exist_main": false,
+                "excute_timeout": 5,
+                "sample_hash": "",
+                "sample_hint": ""
+            }
+        },
+        {
+            "name": "Exercise 01: ft_print_alphabet",
+            "scan": {
+                "directory": "ex01",
+                "files": [
+                    "ft_print_alphabet.c"
+                ],
+                "entry": "dm9pZAlmdF9wcmludF9hbHBoYWJldCh2b2lkKTsKCmludCBtYWluKHZvaWQpCnsKCWZ0X3ByaW50X2FscGhhYmV0KCk7Cn0=",
+                "exist_main": false,
+                "excute_timeout": 5,
+                "sample_hash": "",
+                "sample_hint": ""
+            }
+        },
+        {
+            "name": "Exercise 02: ft_print_reverse_alphabet",
+            "scan": {
+                "directory": "ex02",
+                "files": [
+                    "ft_print_reverse_alphabet.c"
+                ],
+                "entry": "dm9pZAlmdF9wcmludF9yZXZlcnNlX2FscGhhYmV0KHZvaWQpOwoKaW50IG1haW4odm9pZCkKewoJZnRfcHJpbnRfcmV2ZXJzZV9hbHBoYWJldCgpOwp9",
+                "exist_main": false,
+                "excute_timeout": 5,
+                "sample_hash": "",
+                "sample_hint": ""
+            }
+        },
+        {
+            "name": "Exercise 03: ft_print_numbers",
+            "scan": {
+                "directory": "ex03",
+                "files": [
+                    "ft_print_numbers.c"
+                ],
+                "entry": "dm9pZAlmdF9wcmludF9udW1iZXJzKHZvaWQpOwoKaW50IG1haW4odm9pZCkKewoJZnRfcHJpbnRfbnVtYmVycygpOwp9",
+                "exist_main": false,
+                "excute_timeout": 5,
+                "sample_hash": "",
+                "sample_hint": ""
+            }
+        },
+        {
+            "name": "Exercise 04: ft_is_negative",
+            "scan": {
+                "directory": "ex04",
+                "files": [
+                    "ft_is_negative.c"
+                ],
+                "entry": "dm9pZCBmdF9pc19uZWdhdGl2ZShpbnQgbik7CgppbnQgbWFpbih2b2lkKQp7CglmdF9pc19uZWdhdGl2ZSgxMCk7CiAgICAgICAgZnRfaXNfbmVnYXRpdmUoMCk7CiAgICAgICAgZnRfaXNfbmVnYXRpdmUoLTEwKTsKfQ==",
+                "exist_main": false,
+                "excute_timeout": 5,
+                "sample_hash": "",
+                "sample_hint": ""
+            }
+        },
+        {
+            "name": "Exercise 05: ft_print_comb",
+            "scan": {
+                "directory": "ex05",
+                "files": [
+                    "ft_print_comb.c"
+                ],
+                "entry": "dm9pZCBmdF9wcmludF9jb21iKHZvaWQpOwoKaW50IG1haW4odm9pZCkKewoJZnRfcHJpbnRfY29tYigpOwp9",
+                "exist_main": false,
+                "excute_timeout": 5,
+                "sample_hash": "",
+                "sample_hint": ""
+            }
+        },
+        {
+            "name": "Exercise 06: ft_print_comb2",
+            "scan": {
+                "directory": "ex06",
+                "files": [
+                    "ft_print_comb2.c"
+                ],
+                "entry": "dm9pZCBmdF9wcmludF9jb21iMih2b2lkKTsKCmludCBtYWluKHZvaWQpCnsKCWZ0X3ByaW50X2NvbWIyKCk7Cn0=",
+                "exist_main": false,
+                "excute_timeout": 5,
+                "sample_hash": "",
+                "sample_hint": ""
+            }
+        },
+        {
+            "name": "Exercise 07: ft_putnbr",
+            "scan": {
+                "directory": "ex07",
+                "files": [
+                    "ft_putnbr.c"
+                ],
+                "entry": "I2luY2x1ZGUgPHVuaXN0ZC5oPgoKdm9pZCBmdF9wdXRuYnIoaW50IG5iKTsKCmludCBtYWluKHZvaWQpCnsKCWZ0X3B1dG5icigxMCk7Cgl3cml0ZSgxLCJcbiIsIDEpOwoJZnRfcHV0bmJyKC0xMCk7Cgl3cml0ZSgxLCJcbiIsIDEpOwoJZnRfcHV0bmJyKDApOwoJd3JpdGUoMSwiXG4iLCAxKTsKCWZ0X3B1dG5icigtMjE0NzQ4MzY0OCk7Cgl3cml0ZSgxLCJcbiIsIDEpOwoJZnRfcHV0bmJyKDIxNDc0ODM2NDcpOwp9",
+                "exist_main": false,
+                "excute_timeout": 5,
+                "sample_hash": "",
+                "sample_hint": ""
+            }
+        },
+        {
+            "name": "Exercise 08: ft_print_combn",
+            "scan": {
+                "directory": "ex08",
+                "files": [
+                    "ft_print_combn.c"
+                ],
+                "entry": "I2luY2x1ZGUgPHVuaXN0ZC5oPgoKdm9pZCBmdF9wcmludF9jb21ibihpbnQgbik7CgppbnQgbWFpbih2b2lkKQp7CglmdF9wcmludF9jb21ibigxKTsKCXdyaXRlKDEsIlxuIiwgMSk7CglmdF9wcmludF9jb21ibig1KTsKCXdyaXRlKDEsIlxuIiwgMSk7CglmdF9wcmludF9jb21ibig5KTsKCXdyaXRlKDEsIlxuIiwgMSk7Cn0=",
+                "exist_main": false,
+                "excute_timeout": 5,
+                "sample_hash": "",
+                "sample_hint": ""
+            }
+        }
+    ]
+}

@@ -65,49 +65,63 @@ class Scanner():
 		if not e_res == []:
 			for e in e_res:
 				print("{} : {}".format(e[0], e[1]), tag='NO EXIST', tag_color='red', color='red')
-			return
+			return [profile['name'], "[ERROR] NO EXIST", 'red']
 		else:
 			print("Required files and directories found!", tag='EXIST', tag_color='green', color='green')
 
 		c_res = self.compile(profile['scan']['directory'], profile['scan']['files'], profile['scan']['entry'], "{}.out".format(profile['scan']['directory']) ,profile['scan']['exist_main'])
 
 		if not c_res == None:
-			print("\n" + c_res, tag='COMPLITE ERROR', tag_color='red', color='red')
-			return
+			print("\n" + c_res, tag='COMPLIE FAILED', tag_color='red', color='red')
+			return [profile['name'], "[ERROR] COMPLIE FAILED", 'red']
 		else:
 			print("Compiled successfully!", tag='COMPILED', tag_color='green', color='green')
 
 		e_res = self.excute("{}.out".format(profile['scan']['directory']) , profile['scan']['excute_timeout'])
 
 		if e_res == None:
-			print("An error occurred or timed out during execution.", tag='EXCUTE ERROR', tag_color='red', color='red')
-			return
+			print("An error occurred or timed out during execution.", tag='EXCUTE FAILED', tag_color='red', color='red')
+			return [profile['name'], "[ERROR] EXCUTE FAILED", 'red']
 		else:
 			if print_entry:
 				print("\n" + base64.b64decode(profile['scan']['entry'].encode()).decode('ascii'), tag='ENTRY POINT', tag_color='yellow', color='magenta')
 			print("\n" + e_res, tag='OUTPUT', tag_color='yellow', color='white')
 
+		return [profile['name'], "[SUCCESS] ALL OK!", 'green']
+
 	#プロファイルのリストをもとに、個々のプロファイルのチェックを呼び出す。
 	def run(self, profiles:dict, print_entry:bool):
 		print("""
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+==========Shun Scanner==========
+
 Project : {}
 Profile Author : {}
 Execution timestamp : {}
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
 		""".format(profiles['Project'], profiles['Author'], datetime.datetime.now().timestamp()))
 
+		details = []
+
 		if not os.path.exists('output'):
 			os.makedirs('output')
 
 		for profile in profiles['profiles']:
 			print("Start scanning |{}|...".format(profile['name']), tag='INFO', tag_color='cyan', color='cyan')
-			scanner.scan(profile, True)
+			details.append(scanner.scan(profile, True))
 			print("Scan completed |{}|".format(profile['name']), tag='INFO', tag_color='cyan', color='cyan')
 
 		print("""
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+==========Shun Scanner==========
+
 All profiles scan completed!
+		""")
+
+		for detail in details:
+			print("{} -> {}".format(detail[0], detail[1]), color=detail[2])
+
+		print("""
 Thanks you! :)
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
 		""")

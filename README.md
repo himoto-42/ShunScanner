@@ -2,11 +2,12 @@
 42 Network PicineのC言語の課題のレビューの手間を大幅に軽減するツール
 
 ## インストール
-`install.sh`を[ダウンロード](https://github.com/himoto-42/ShunScanner/raw/main/install.sh)して実行
 
+以下のコードを実行
 ```
-chmod u+x ./install.sh && ./install.sh 
+bash <(curl -L https://raw.githubusercontent.com/himoto-42/ShunScanner/main/install.sh)
 ```
+または`install.sh`を[ダウンロード](https://github.com/himoto-42/ShunScanner/raw/main/install.sh)して実行
 
 ## 使い方
 

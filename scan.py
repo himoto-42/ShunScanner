@@ -54,7 +54,7 @@ class Scanner():
 	#指定されたバイナリを実行し、標準出力を文字列として返す。タイムアウトになった場合はNoneを返す。
 	def excute(self, bainary:str, timeout:float)->tuple:
 		try:
-			res = subprocess.run('./output/{} | cat -e'.format(bainary), shell=True, capture_output=True, text=True, timeout=timeout)
+			res = subprocess.run('./output/{}'.format(bainary), shell=True, capture_output=True, text=True, timeout=timeout)
 			return [res.stdout, res.stderr]
 		except subprocess.TimeoutExpired:
 			return []
@@ -104,7 +104,8 @@ class Scanner():
 			if print_entry:
 				print("\n" + base64.b64decode(profile['scan']['entry'].encode()).decode('ascii'), tag='ENTRY POINT', tag_color='yellow', color='magenta')
 			print("\n" + e_res[0], tag='OUTPUT', tag_color='yellow', color='white')
-			print("\n" + e_res[1], color='red')
+			print(e_res[1], color='red')
+			print(tag='END', tag_color='yellow')
 
 		return [profile['name'], "[SUCCESS] ALL OK!", 'green']
 

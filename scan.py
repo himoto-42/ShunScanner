@@ -52,12 +52,12 @@ class Scanner():
 			return res.stderr
 
 	#指定されたバイナリを実行し、標準出力を文字列として返す。タイムアウトになった場合はNoneを返す。
-	def excute(self, bainary:str, timeout:float)->str:
+	def excute(self, bainary:str, timeout:float)->tuple:
 		try:
 			res = subprocess.run('./output/{}'.format(bainary), shell=True, capture_output=True, text=True, timeout=timeout)
-			return res.stdout + '\n' + res.stderr
+			return [res.stdout, res.stderr]
 		except subprocess.TimeoutExpired:
-			return None
+			return []
 
 	#文字列からSHA256形式のハッシュ値を取得し、16進数の文字列として返す。
 	def hash(self, text:str)->str:
@@ -97,13 +97,14 @@ class Scanner():
 
 		e_res = self.excute("{}.out".format(profile['scan']['directory']) , profile['scan']['excute_timeout'])
 
-		if e_res == None:
+		if e_res == []:
 			print("An error occurred or timed out during execution.", tag='EXCUTE FAILED', tag_color='red', color='red')
 			return [profile['name'], "[ERROR] EXCUTE FAILED", 'red']
 		else:
 			if print_entry:
 				print("\n" + base64.b64decode(profile['scan']['entry'].encode()).decode('ascii'), tag='ENTRY POINT', tag_color='yellow', color='magenta')
-			print("\n" + e_res, tag='OUTPUT', tag_color='yellow', color='white')
+			print("\n" + e_res[0], tag='OUTPUT', tag_color='yellow', color='white')
+			print("\n" + e_res[1], color='red')
 
 		return [profile['name'], "[SUCCESS] ALL OK!", 'green']
 

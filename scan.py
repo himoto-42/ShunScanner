@@ -104,7 +104,8 @@ class Scanner():
 			if print_entry:
 				print("\n" + base64.b64decode(profile['scan']['entry'].encode()).decode('ascii'), tag='ENTRY POINT', tag_color='yellow', color='magenta')
 			print("\n" + e_res[0], tag='OUTPUT', tag_color='yellow', color='white')
-			print(e_res[1], color='red')
+			if e_res[1]:
+				print(e_res[1], color='red')
 			print(tag='END', tag_color='yellow')
 
 		return [profile['name'], "[SUCCESS] ALL OK!", 'green']

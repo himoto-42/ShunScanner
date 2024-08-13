@@ -54,7 +54,7 @@ class Scanner():
 	#指定されたバイナリを実行し、標準出力を文字列として返す。タイムアウトになった場合はNoneを返す。
 	def excute(self, bainary:str, timeout:float)->str:
 		try:
-			res = subprocess.run('./output/{}'.format(bainary), shell=True, text=True, capture_output=True, timeout=timeout)
+			res = subprocess.run('./output/{}'.format(bainary), shell=True, text=True, capture_output=True, timeout=timeout, stderr=subprocess.STDOUT)
 			return res.stdout
 		except subprocess.TimeoutExpired:
 			return None

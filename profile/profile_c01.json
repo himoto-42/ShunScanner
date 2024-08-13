@@ -1,0 +1,132 @@
+{
+    "Project": "C Piscine C01",
+    "Author": "himoto",
+    "profiles": [
+        {
+            "name": "Exercise 00 : ft_ft",
+            "scan": {
+                "directory": "ex00",
+                "files": [
+                    "ft_ft.c"
+                ],
+                "entry": "I2luY2x1ZGUgPHN0ZGlvLmg+Cgp2b2lkIGZ0X2Z0KGludCAqbmJyKTsKCmludCBtYWluKCkgewogICAgaW50IG51bSA9IDA7CiAgICBmdF9mdCgmbnVtKTsKICAgIHByaW50ZigiRXhwZWN0ZWQ6IDQyLCBHb3Q6ICVkXG4iLCBudW0pOyAgLy8gRXhwZWN0ZWQ6IDQyCgogICAgcmV0dXJuIDA7Cn0=",
+                "exist_main": false,
+                "excute_timeout": 5,
+                "sample_hash": "",
+                "sample_hint": ""
+            }
+        },
+        {
+            "name": "Exercise 01 : ft_ultimate_ft",
+            "scan": {
+                "directory": "ex01",
+                "files": [
+                    "ft_ultimate_ft.c"
+                ],
+                "entry": "I2luY2x1ZGUgPHN0ZGlvLmg+Cgp2b2lkIGZ0X3VsdGltYXRlX2Z0KGludCAqKioqKioqKipuYnIpOwoKaW50IG1haW4oKSB7CiAgICBpbnQgbnVtID0gMDsKICAgIGludCAqcHRyMSA9ICZudW07CiAgICBpbnQgKipwdHIyID0gJnB0cjE7CiAgICBpbnQgKioqcHRyMyA9ICZwdHIyOwogICAgaW50ICoqKipwdHI0ID0gJnB0cjM7CiAgICBpbnQgKioqKipwdHI1ID0gJnB0cjQ7CiAgICBpbnQgKioqKioqcHRyNiA9ICZwdHI1OwogICAgaW50ICoqKioqKipwdHI3ID0gJnB0cjY7CiAgICBpbnQgKioqKioqKipwdHI4ID0gJnB0cjc7CiAgICBmdF91bHRpbWF0ZV9mdCgmcHRyOCk7CiAgICBwcmludGYoIkV4cGVjdGVkOiA0MiwgR290OiAlZFxuIiwgbnVtKTsgIC8vIEV4cGVjdGVkOiA0MgoKICAgIHJldHVybiAwOwp9Cg==",
+                "exist_main": false,
+                "excute_timeout": 5,
+                "sample_hash": "",
+                "sample_hint": ""
+            }
+        },
+        {
+            "name": "Exercise 02 : ft_swap",
+            "scan": {
+                "directory": "ex02",
+                "files": [
+                    "ft_swap.c"
+                ],
+                "entry": "I2luY2x1ZGUgPHN0ZGlvLmg+Cgp2b2lkIGZ0X3N3YXAoaW50ICphLCBpbnQgKmIpOwoKaW50IG1haW4oKSB7CiAgICBpbnQgeCA9IDEsIHkgPSAyOwogICAgZnRfc3dhcCgmeCwgJnkpOwogICAgcHJpbnRmKCJFeHBlY3RlZDogeD0yLCB5PTEsIEdvdDogeD0lZCwgeT0lZFxuIiwgeCwgeSk7ICAvLyBFeHBlY3RlZDogeD0yLCB5PTEKCiAgICByZXR1cm4gMDsKfQo=",
+                "exist_main": false,
+                "excute_timeout": 5,
+                "sample_hash": "",
+                "sample_hint": ""
+            }
+        },
+        {
+            "name": "Exercise 03 : ft_div_mod",
+            "scan": {
+                "directory": "ex03",
+                "files": [
+                    "ft_div_mod.c"
+                ],
+                "entry": "I2luY2x1ZGUgPHN0ZGlvLmg+Cgp2b2lkIGZ0X2Rpdl9tb2QoaW50IGEsIGludCBiLCBpbnQgKmRpdiwgaW50ICptb2QpOwoKaW50IG1haW4oKSB7CiAgICBpbnQgZGl2LCBtb2Q7CiAgICBmdF9kaXZfbW9kKDEwLCAzLCAmZGl2LCAmbW9kKTsKICAgIHByaW50ZigiRXhwZWN0ZWQ6IGRpdj0zLCBtb2Q9MSwgR290OiBkaXY9JWQsIG1vZD0lZFxuIiwgZGl2LCBtb2QpOyAgLy8gRXhwZWN0ZWQ6IGRpdj0zLCBtb2Q9MQoKICAgIC8vIFRlc3Qgd2l0aCBiID0gMSAoZWRnZSBjYXNlKQogICAgZnRfZGl2X21vZCgxMCwgMSwgJmRpdiwgJm1vZCk7CiAgICBwcmludGYoIkV4cGVjdGVkOiBkaXY9MTAsIG1vZD0wLCBHb3Q6IGRpdj0lZCwgbW9kPSVkXG4iLCBkaXYsIG1vZCk7ICAvLyBFeHBlY3RlZDogZGl2PTEwLCBtb2Q9MAoKICAgIC8vIFRlc3Qgd2l0aCBiID0gMCAodW5kZWZpbmVkIGJlaGF2aW9yLCBkZXBlbmRpbmcgb24gaW1wbGVtZW50YXRpb24pCiAgICBmdF9kaXZfbW9kKDEwLCAwLCAmZGl2LCAmbW9kKTsKICAgIHByaW50ZigiR290OiBkaXY9JWQsIG1vZD0lZFxuIiwgZGl2LCBtb2QpOyAgLy8gVW5kZWZpbmVkIGJlaGF2aW9yCgogICAgcmV0dXJuIDA7Cn0K",
+                "exist_main": false,
+                "excute_timeout": 5,
+                "sample_hash": "",
+                "sample_hint": ""
+            }
+        },
+        {
+            "name": "Exercise 04 : ft_ultimate_div_mod",
+            "scan": {
+                "directory": "ex04",
+                "files": [
+                    "ft_ultimate_div_mod.c"
+                ],
+                "entry": "I2luY2x1ZGUgPHN0ZGlvLmg+Cgp2b2lkIGZ0X3VsdGltYXRlX2Rpdl9tb2QoaW50ICphLCBpbnQgKmIpOwoKaW50IG1haW4oKSB7CiAgICBpbnQgeCA9IDEwLCB5ID0gMzsKICAgIGZ0X3VsdGltYXRlX2Rpdl9tb2QoJngsICZ5KTsKICAgIHByaW50ZigiRXhwZWN0ZWQ6IHg9MywgeT0xLCBHb3Q6IHg9JWQsIHk9JWRcbiIsIHgsIHkpOyAgLy8gRXhwZWN0ZWQ6IHg9MywgeT0xCgogICAgcmV0dXJuIDA7Cn0K",
+                "exist_main": false,
+                "excute_timeout": 5,
+                "sample_hash": "",
+                "sample_hint": ""
+            }
+        },
+        {
+            "name": "Exercise 05 : ft_putstr",
+            "scan": {
+                "directory": "ex05",
+                "files": [
+                    "ft_putstr.c"
+                ],
+                "entry": "I2luY2x1ZGUgPHN0ZGlvLmg+Cgp2b2lkIGZ0X3B1dHN0cihjaGFyICpzdHIpOwoKaW50IG1haW4oKSB7CiAgICBmdF9wdXRzdHIoIkhlbGxvLCB3b3JsZCFcbiIpOyAgLy8gRXhwZWN0ZWQgb3V0cHV0OiAiSGVsbG8sIHdvcmxkISIKICAgIGZ0X3B1dHN0cigiIik7ICAgICAgICAgICAgICAgICAvLyBFeHBlY3RlZCBvdXRwdXQ6ICIiCiAgICBmdF9wdXRzdHIoTlVMTCk7ICAgICAgICAgICAgICAgLy8gRXhwZWN0ZWQgb3V0cHV0OiAoaGFuZGxlIHRoaXMgY2FzZSBiYXNlZCBvbiB5b3VyIGltcGxlbWVudGF0aW9uKQoKICAgIHJldHVybiAwOwp9Cg==",
+                "exist_main": false,
+                "excute_timeout": 5,
+                "sample_hash": "",
+                "sample_hint": ""
+            }
+        },
+        {
+            "name": "Exercise 06 : ft_strlen",
+            "scan": {
+                "directory": "ex06",
+                "files": [
+                    "ft_strlen.c"
+                ],
+                "entry": "I2luY2x1ZGUgPHN0ZGlvLmg+CgppbnQgZnRfc3RybGVuKGNoYXIgKnN0cik7CgppbnQgbWFpbigpIHsKICAgIHByaW50ZigiRXhwZWN0ZWQ6IDEzLCBHb3Q6ICVkXG4iLCBmdF9zdHJsZW4oIkhlbGxvLCB3b3JsZCEiKSk7ICAvLyBFeHBlY3RlZDogMTMKICAgIHByaW50ZigiRXhwZWN0ZWQ6IDAsIEdvdDogJWRcbiIsIGZ0X3N0cmxlbigiIikpOyAgICAgICAgICAgICAgICAvLyBFeHBlY3RlZDogMAogICAgcHJpbnRmKCJFeHBlY3RlZDogMCwgR290OiAlZFxuIiwgZnRfc3RybGVuKE5VTEwpKTsgICAgICAgICAgICAgIC8vIEV4cGVjdGVkOiAwIChoYW5kbGUgTlVMTCBhcyBlZGdlIGNhc2UpCgogICAgcmV0dXJuIDA7Cn0K",
+                "exist_main": false,
+                "excute_timeout": 5,
+                "sample_hash": "",
+                "sample_hint": ""
+            }
+        },
+        {
+            "name": "Exercise 07 : ft_rev_int_tab",
+            "scan": {
+                "directory": "ex07",
+                "files": [
+                    "ft_rev_int_tab.c"
+                ],
+                "entry": "I2luY2x1ZGUgPHN0ZGlvLmg+Cgp2b2lkIGZ0X3Jldl9pbnRfdGFiKGludCAqdGFiLCBpbnQgc2l6ZSk7CgppbnQgbWFpbigpIHsKICAgIGludCBhcnIxW10gPSB7MSwgMiwgMywgNCwgNX07CiAgICBmdF9yZXZfaW50X3RhYihhcnIxLCA1KTsKICAgIHByaW50ZigiRXhwZWN0ZWQ6IDUgNCAzIDIgMSwgR290OiAiKTsKICAgIGZvciAoaW50IGkgPSAwOyBpIDwgNTsgaSsrKSB7CiAgICAgICAgcHJpbnRmKCIlZCAiLCBhcnIxW2ldKTsKICAgIH0KICAgIHByaW50ZigiXG4iKTsKCiAgICBpbnQgYXJyMltdID0gezEsIDJ9OwogICAgZnRfcmV2X2ludF90YWIoYXJyMiwgMik7CiAgICBwcmludGYoIkV4cGVjdGVkOiAyIDEsIEdvdDogIik7CiAgICBmb3IgKGludCBpID0gMDsgaSA8IDI7IGkrKykgewogICAgICAgIHByaW50ZigiJWQgIiwgYXJyMltpXSk7CiAgICB9CiAgICBwcmludGYoIlxuIik7CgogICAgcmV0dXJuIDA7Cn0K",
+                "exist_main": false,
+                "excute_timeout": 5,
+                "sample_hash": "",
+                "sample_hint": ""
+            }
+        },
+        {
+            "name": "Exercise 08 : ft_sort_int_tab",
+            "scan": {
+                "directory": "ex08",
+                "files": [
+                    "ft_sort_int_tab.c"
+                ],
+                "entry": "I2luY2x1ZGUgPHN0ZGlvLmg+Cgp2b2lkIGZ0X3NvcnRfaW50X3RhYihpbnQgKnRhYiwgaW50IHNpemUpOwoKaW50IG1haW4oKSB7CiAgICBpbnQgYXJyMVtdID0gezMsIDEsIDQsIDEsIDV9OwogICAgZnRfc29ydF9pbnRfdGFiKGFycjEsIDUpOwogICAgcHJpbnRmKCJFeHBlY3RlZDogMSAxIDMgNCA1LCBHb3Q6ICIpOwogICAgZm9yIChpbnQgaSA9IDA7IGkgPCA1OyBpKyspIHsKICAgICAgICBwcmludGYoIiVkICIsIGFycjFbaV0pOwogICAgfQogICAgcHJpbnRmKCJcbiIpOwoKICAgIGludCBhcnIyW10gPSB7MiwgMiwgMiwgMiwgMn07CiAgICBmdF9zb3J0X2ludF90YWIoYXJyMiwgNSk7CiAgICBwcmludGYoIkV4cGVjdGVkOiAyIDIgMiAyIDIsIEdvdDogIik7CiAgICBmb3IgKGludCBpID0gMDsgaSA8IDU7IGkrKykgewogICAgICAgIHByaW50ZigiJWQgIiwgYXJyMltpXSk7CiAgICB9CiAgICBwcmludGYoIlxuIik7CgogICAgcmV0dXJuIDA7Cn0K",
+                "exist_main": false,
+                "excute_timeout": 5,
+                "sample_hash": "",
+                "sample_hint": ""
+            }
+        }
+    ]
+}

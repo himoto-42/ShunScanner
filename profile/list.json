@@ -4,6 +4,10 @@
         {
             "name":"C Piscine C00",
             "file":"profile_c00.json"
+        },
+        {
+            "name":"C Piscine C01",
+            "file":"profile_c01.json"
         }
     ]
 }

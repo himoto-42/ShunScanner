@@ -20,6 +20,7 @@ sscan
 > [0] "C Piscine C00"
 > [1] "C Piscine C01"
 > +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+>
 > Please select a profile number : 使用したいプロファイルの番号　例）1
 > Please enter the target repository link : スキャン対象のリポジトリのリンク　例）git@vogsphere-v2.42tokyo.jp:vogsphere/intra-uuid-{}
 ```

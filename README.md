@@ -2,35 +2,18 @@
 42 Network PicineのC言語の課題のレビューの手間を大幅に軽減するツール
 
 ## インストール
-ダウンロードしたフォルダーに入って以下のコマンドを実行。
+`install.sh`を[ダウンロード](https://github.com/himoto-42/ShunScanner/raw/main/install.sh)して実行
 
 ```
-# ShunScannerの中で以下のコマンドを1つ1つ実行
-pip3 install print-color
-cp scan.py ~/.local/bin/sscan
-chmod u+x ~/.local/bin/sscan 
+chmod u+x ./install.sh && ./install.sh 
 ```
-### パスの通り方
-#### bash
-```
-echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
-source ~/.bashrc
-```
-#### zsh
-```
-echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
-source ~/.zshrc
-```
-#### fish
-```
-set -U fish_user_paths $HOME/.local/bin $fish_user_paths
-```
+
 ## 使い方
 
 ```
 sscan
 
-> Please enter profile path : 使用するプロファイルのパス 例）~/Download/ShunScanner/profile/profile_c00.json
+> Please enter profile path : ダウンロードしたい課題の番号　例）00
 > Please enter workspace path: プロジェクトのパス　例）/home/Workspace/c00               
 
 ```

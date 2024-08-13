@@ -1,9 +1,9 @@
-#!/usr/bin/env python3
 import subprocess
 import base64
 import hashlib
 import os
 import datetime
+import requests
 import json
 
 try:
@@ -12,9 +12,24 @@ except:
 	print("Please install the print_color library. (pip3 install print-color)")
 	exit(1)
 
+
+PROFILE_BASE = "https://raw.githubusercontent.com/himoto-42/ShunScanner/main/profile/"
+
+class Profiler():
+	def __init__(self) -> None:
+		pass
+
+	def get(self, file:str)->dict:
+		try:
+			return requests.get(PROFILE_BASE + file).json()
+		except:
+			return {}
+
+
+
 class Scanner():
-	def __init__(self, profiles:dict) -> None:
-		self.profiles = profiles
+	def __init__(self) -> None:
+		pass
 
 	#コンパイルに失敗した場合はエラー内容を文字列として返す。正常終了した場合はNoneを返す。
 	def compile(self, dir:str, files:tuple, entry:str, output:str, exist_main:bool)->str:
@@ -94,8 +109,6 @@ class Scanner():
 	def run(self, profiles:dict, print_entry:bool):
 		print("""
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
-==========Shun Scanner==========
-
 Project : {}
 Profile Author : {}
 Execution timestamp : {}
@@ -109,46 +122,65 @@ Execution timestamp : {}
 
 		for profile in profiles['profiles']:
 			print("Start scanning |{}|...".format(profile['name']), tag='INFO', tag_color='cyan', color='cyan')
-			details.append(scanner.scan(profile, True))
+			details.append(self.scan(profile, True))
 			print("Scan completed |{}|".format(profile['name']), tag='INFO', tag_color='cyan', color='cyan')
 
 		print("""
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
-==========Shun Scanner==========
-
 All profiles scan completed!
-		""")
+""")
 
 		for detail in details:
 			print("{} -> {}".format(detail[0], detail[1]), color=detail[2])
 
 		print("""
 Thanks you! :)
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++
-		""")
++++++++++++++++++++++++++++++++++++++++++++++++++++++++""")
 
 
 
 if __name__ == '__main__':
-	p_path = input("Please enter profile path : ")
-	dic = {}
+	profiler = Profiler()
+	scanner = Scanner()
+	p = {}
 
-	try:
-		with open(p_path, 'r') as f:
-			dic = json.load(fp=f)
-	except:
-		print("Could not open profile...")
+	d = profiler.get('list.json')
+	if d == {}:
+		print("Failed to get profile list...(github)", color='red')
 		exit(1)
 
+	print("""
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+========== Profile List ==========
+latest Update : {}""".format(d['latest_update']))
 
-	w_path = input("Please enter workspace path : ")
+	for i in range(0, len(d['data'])):
+		print("[{}] \"{}\"".format(i, d['data'][i]['name']))
+
+	print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
 	try:
-		os.chdir(w_path)
+		s = input("Please select a profile number : ")
+		p = profiler.get(d['data'][int(s)]['file'])
+		if p == {}:
+			print("Failed to get profile...(github)", color='red')
+			exit(1)
 	except:
-		print("Could not move to working directory.")
+		print("unknown error...", color='red')
 		exit(1)
 
+	print('Loaded \"{}\"'.format(p['Project']), tag='SUCCESS', tag_color='green', color='green')
 
-	scanner = Scanner({})
-	scanner.run(dic, True)
+	r = input("Please enter the target repository link : ")
+	dir = 'sscan_{}'.format(datetime.datetime.now().timestamp())
+
+	try:
+		subprocess.run('git clone {} {}'.format(r, dir), shell=True)
+		os.chdir(dir)
+	except:
+		print("Could not clone repository...", color='red')
+		exit(1)
+
+	print('Cloned \"{}\"'.format(dir), tag='SUCCESS', tag_color='green', color='green')
+
+	scanner.run(p, True)

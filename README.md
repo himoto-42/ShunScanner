@@ -5,9 +5,18 @@
 
 以下のコードを実行
 ```
-bash <(curl -L https://raw.githubusercontent.com/himoto-42/ShunScanner/main/install.sh)
+bash <(curl -L https://raw.githubusercontent.com/himoto-42/ShunScanner/main/bin/install.sh)
 ```
-または`install.sh`を[ダウンロード](https://github.com/himoto-42/ShunScanner/raw/main/install.sh)して実行
+または`install.sh`を[ダウンロード](https://raw.githubusercontent.com/himoto-42/ShunScanner/main/bin/install.sh)して実行
+
+## アップデート
+
+以下のコードを実行
+```
+bash <(curl -L https://raw.githubusercontent.com/himoto-42/ShunScanner/main/bin/update.sh)
+```
+または`update.sh`を[ダウンロード](https://raw.githubusercontent.com/himoto-42/ShunScanner/main/bin/update.sh)して実行
+
 
 ## 使い方
 

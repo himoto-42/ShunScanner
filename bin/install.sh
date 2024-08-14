@@ -1,19 +1,18 @@
 #!/bin/bash
+BIN_PATH="$HOME/.local/bin"
+REPO_DIRNAME="ShunScanner"
 
 # Clone the repository
 git clone https://github.com/himoto-42/ShunScanner.git
 
 # Change to the repository directory
-cd ShunScanner
+cd $REPO_DIRNAME
 
 # Install the required Python package
 pip3 install print-color
 
-# Define the path to the user's local bin directory
-BIN_PATH="$HOME/.local/bin"
-
-# Create the bin directory if it doesn't exist, then create a symbolic link to scan.py
-mkdir -p "$BIN_PATH" && ln -s "$(pwd)/scan.py" "$BIN_PATH/sscan"
+# Create the bin directory if it doesn't exist, then put command
+mkdir -p "$BIN_PATH" && cp "$(pwd)/scan.py" "$BIN_PATH/sscan"
 
 # Make the script executable
 chmod u+x "$BIN_PATH/sscan"
@@ -41,3 +40,6 @@ fish)
   echo "Unsupported shell. Please add $BIN_PATH to your PATH manually."
   ;;
 esac
+
+# Delete repo
+cd .. && rm -rf $REPO_DIRNAME
